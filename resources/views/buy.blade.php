@@ -373,6 +373,8 @@
                                   <option value="10000">10000 kg</option>
                                 </select>
                             </div>
+                            <input type="hidden" name="_method" value="PUT">
+
                             <input type="hidden" name="buyid" value="{{ $buy->id }}">
                             <input type="hidden" name="bid" value="{{ $buy->bid }}">
 
