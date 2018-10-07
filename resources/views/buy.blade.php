@@ -362,7 +362,7 @@
                         <td>{{ tita\User::find($buy->seller_id )->country}}</td>
                         <td>{{ $buy->created_at->toFormattedDateString() }}</td>
                         <td>
-                          <form class="" action="/buy/process/" method="POST">
+                          <form class="" action="/buy" method="POST">
                             @csrf
                             <div class="form-group">
                                 <label for="name" class="">Quantity(KG)</label>

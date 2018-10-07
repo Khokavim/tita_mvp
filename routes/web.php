@@ -19,8 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/buy',  'BuyController@index');
+Route::post('/buy',  'BuyController@process');
 Route::post('/buy/search',  'BuyController@search');
-Route::post('/buy/process',  'BuyController@process');
 
 
 Route::get('/sell', 'SellController@index');
