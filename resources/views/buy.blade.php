@@ -362,7 +362,7 @@
                         <td>{{ tita\User::find($buy->seller_id )->country}}</td>
                         <td>{{ $buy->created_at->toFormattedDateString() }}</td>
                         <td>
-                          <form class="" action="/buy/process/" method="post">
+                          <form class="" action="/buy/process/" method="POST">
                             @csrf
                             <div class="form-group">
                                 <label for="name" class="">Quantity(KG)</label>
@@ -373,7 +373,7 @@
                                   <option value="10000">10000 kg</option>
                                 </select>
                             </div>
-                            <input type="hidden" name="_method" value="PUT">
+                            <!-- <input type="hidden" name="_method" value="PUT"> -->
 
                             <input type="hidden" name="buyid" value="{{ $buy->id }}">
                             <input type="hidden" name="bid" value="{{ $buy->bid }}">

@@ -44,9 +44,9 @@ class BuyController extends Controller
         'buyid'=>'required'
       ]);
       // dd(Sell::where('id','=',request('buyid'))->get(['seller_id'])->value());
-
       if(auth()->user()->tita >= $request->quantity * $request->bid && Sell::find(request('buyid'))->seller_id != auth()->id()){
         $asset=Sell::findORFail(request('buyid'));
+        // dd($asset);
         Buy::create([
          'sell_id'=> request('buyid'),
          'track_id'=> '',
