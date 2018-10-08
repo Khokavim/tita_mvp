@@ -72,7 +72,7 @@
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body style="background-color:#;background-image: url('/images/h1.png');background-size:cover;">
+<body style="background-color:#;background-image: url('/images/h1.png');background-size:cover;background-repeat:-y;">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color:#020b54;color:white;">
             <div class="container" style="background-color:#;color:white;">
