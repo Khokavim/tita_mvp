@@ -27,7 +27,7 @@ class BuyController extends Controller
     public function index()
     {
        $search_status=0;
-        $buys=Sell::where('sold','=',0)->where('quantity' ,'>',0)->simplePaginate(3);
+        $buys=Sell::where('sold','=',0)->where('quantity' ,'>',0)->simplePaginate(6);
         return view('buy', compact('buys','search_status'));
     }
 
